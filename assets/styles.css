@@ -217,6 +217,31 @@ h1, h2 { letter-spacing: -.045em; }
   margin-top: 54px;
   padding: 44px;
 }
+.product-card {
+  align-items: center;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 30px;
+  display: grid;
+  gap: 42px;
+  grid-template-columns: minmax(180px, 280px) 1fr;
+  margin-top: 54px;
+  overflow: hidden;
+  padding: 24px 44px 24px 24px;
+}
+.product-card-image {
+  aspect-ratio: 2 / 3;
+  border-radius: 22px;
+  display: block;
+  overflow: hidden;
+}
+.product-card-image img { height: 100%; object-fit: cover; width: 100%; }
+.product-card h3 { font-size: 34px; margin: 0 0 14px; }
+.product-card p:not(.eyebrow) {
+  color: var(--muted);
+  line-height: 1.7;
+  margin: 0 0 22px;
+}
 .plus {
   align-items: center;
   background: var(--sage);
@@ -326,10 +351,12 @@ footer p { color: var(--muted); font-size: 12px; }
   justify-content: center;
   overflow: hidden;
 }
+.product-image.product-poster { aspect-ratio: 2 / 3; background: var(--paper); }
 .product-image img { height: 100%; object-fit: cover; width: 100%; }
 .product-image span { color: white; font: 300 90px Georgia, serif; }
 .product-copy h1 { font-size: clamp(44px, 5vw, 68px); line-height: 1; margin: 0 0 24px; }
 .affiliate-note { color: #7b807c; font-size: 11px; line-height: 1.55; }
+.price-note { color: #7b807c; font-size: 11px; line-height: 1.55; margin-top: 8px; }
 .detail-grid {
   display: grid;
   gap: 18px;
@@ -343,6 +370,7 @@ footer p { color: var(--muted); font-size: 12px; }
   .hero, .section-heading, .how > div, .product-shell { grid-template-columns: 1fr; }
   .hero-card { min-height: 450px; transform: none; }
   .category-grid { grid-template-columns: 1fr; }
+  .product-card { grid-template-columns: minmax(150px, 220px) 1fr; }
 }
 @media (max-width: 560px) {
   .site-header, footer { padding-left: 18px; padding-right: 18px; }
@@ -353,6 +381,8 @@ footer p { color: var(--muted); font-size: 12px; }
   .hero h1 { font-size: 52px; }
   .hero-card { border-radius: 28px; min-height: 400px; padding: 22px; }
   .empty-state { grid-template-columns: 1fr; padding: 24px; }
+  .product-card { grid-template-columns: 1fr; padding: 18px; }
+  .product-card-image { max-height: 520px; }
   .plus { height: 96px; }
   .how { border-radius: 0; padding: 72px 24px; }
   .about { grid-template-columns: 90px 1fr; }
@@ -361,4 +391,3 @@ footer p { color: var(--muted); font-size: 12px; }
   .copyright { grid-column: auto; }
   .detail-grid { grid-template-columns: 1fr; }
 }
-
