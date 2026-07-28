@@ -407,6 +407,16 @@ footer p { color: var(--muted); font-size: 12px; }
 }
 .product-image.product-poster { aspect-ratio: 2 / 3; background: var(--paper); }
 .product-image img { height: 100%; object-fit: cover; width: 100%; }
+.product-image.product-photo {
+  background: var(--paper);
+  box-shadow: 0 20px 55px rgba(47,52,55,.12);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.product-image.product-photo:hover,
+.product-image.product-photo:focus-visible {
+  box-shadow: 0 24px 65px rgba(47,52,55,.18);
+  transform: translateY(-3px);
+}
 .product-image span { color: white; font: 300 90px Georgia, serif; }
 .product-image.creami-visual {
   aspect-ratio: 4 / 5;
