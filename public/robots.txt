@@ -2,4 +2,3 @@ User-agent: *
 Allow: /
 Disallow: /products/product-template/
 
-Sitemap: https://kitchen-ease-finds.pages.dev/sitemap.xml

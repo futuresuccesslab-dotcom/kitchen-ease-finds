@@ -44,14 +44,15 @@ folder suplimentar care contine intregul proiect.
 
    `REPLACE:`
 
-5. Adauga o imagine editoriala originala sau o fotografie autorizata in `public/assets/products`.
+5. Adauga imaginea reala a produsului in `public/assets/products`.
 6. Inlocuieste `AFFILIATE_LINK_HERE` cu linkul Amazon afiliat.
 7. Adauga un card pentru produs pe pagina `public/index.html`.
 
 ## Reguli importante
 
-- Foloseste imagini editoriale originale sau fotografii ale produsului pentru care ai drepturi clare de utilizare.
+- Foloseste fotografii reale si autorizate ale produsului.
 - Nu introduce preturi fixe; preturile Amazon se pot modifica.
 - Nu spune ca produsul este testat daca nu a fost testat.
 - Nu face afirmatii medicale sau promisiuni garantate.
 - Pastreaza declaratia Amazon Associates pe fiecare pagina comerciala.
+
